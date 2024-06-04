@@ -1,3 +1,8 @@
+# Movies Browser
+
+**Demo:**
+https://rafal-1999.github.io/Movies-Browser/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
