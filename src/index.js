@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { Normalize } from "styled-normalize";
+import { GlobalStyles } from "./styles/global";
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <Normalize />
+        <GlobalStyles />
         <App />
     </React.StrictMode>
 );
