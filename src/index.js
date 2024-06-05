@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import { Normalize } from "styled-normalize";
 import { GlobalStyles } from "./styles/global";
 import App from './App';
+import "./styles/fonts.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
