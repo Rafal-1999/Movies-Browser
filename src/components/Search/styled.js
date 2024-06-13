@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { device } from "../../styles/breakpoints";
 
-export const StyledForm = styled.form`
+export const StyledForm = styled.div`
     width: 100%;
     height: 44px;
 
@@ -15,7 +15,7 @@ export const StyledForm = styled.form`
     }
 `;
 
-export const InputBox = styled.div`
+export const InputBox = styled.form`
     width: 100%;
     height: 100%;
     position: relative;
@@ -27,19 +27,15 @@ export const InputBox = styled.div`
             height: 13px;
             margin: auto 0;
             color: #627489;
-            font-family: icomoon;
-            font-size: 13px;
-            font-weight: 700;
-            position: absolute;
+            font-size: 11px;
+            font-weight: 600;
             top: 0;
             left: 18px;
-            bottom: 0;
-            z-index: 1;
         }
     }
 `;
 
-export const HiddenFormLabel = styled.label`
+export const FormLabel = styled.label`
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -59,10 +55,6 @@ export const FormInput = styled.input`
     border: 1px solid #E4E6F0;
     border-radius: 33px;
     position: relative;
-
-    &::placeholder {
-        color: #7E839A;
-    }
 
     @media ${device.xs} {
         padding: 14px 14px 13px 40px;

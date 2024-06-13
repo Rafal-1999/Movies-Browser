@@ -1,28 +1,26 @@
 import {
     StyledForm,
     InputBox,
-    HiddenFormLabel,
+    FormLabel,
     FormInput
 } from "./styled";
 
 const Search = ({
     idName,
     typeValue,
-    placeholderText,
-    valueContent,
-    onChangeContent
+    placeholderText
 }) => (
     <StyledForm>
         <InputBox>
-            <HiddenFormLabel htmlFor={idName}>
+            <FormLabel htmlFor={idName}>
                 Search for movies
-            </HiddenFormLabel>
+            </FormLabel>
             <FormInput
                 id={idName}
                 type={typeValue}
                 placeholder={placeholderText}
-                value={valueContent}
-                onChange={onChangeContent}
+                value={<span>Tekst</span>}
+                onChange={<></>}
             />
         </InputBox>
     </StyledForm>
