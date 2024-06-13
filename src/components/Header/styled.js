@@ -5,7 +5,7 @@ export const StyledHeader = styled.div`
     background: #18181B;
 `;
 
-export const Wrapper = styled.div`
+export const WrapperContainer = styled.h1`
     padding: 24px 0 16px 0;
     display: flex;
     justify-content: space-between;
@@ -28,14 +28,9 @@ export const Box = styled.div`
     }
 `;
 
-export const HeaderOne = styled.h1`
+export const HeaderOne = styled.div`
     color: #FFFFFF;
-    margin: 0;
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 500;
-
-    @media ${device.sm} {
-        font-size: 24px;
-    }
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
 `;

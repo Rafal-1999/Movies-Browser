@@ -5,28 +5,28 @@ import {
     StyledHeader,
     Wrapper,
     Box,
-    HeaderOne
+    HeaderOne,
+    WrapperContainer
 } from "./styled";
-import { mainNavigation } from "../../data/mainNavigation";
 
-const Header = () => (
+const Header = () => {
     <StyledHeader>
         <Container maxWidth="1336px" padding="0 16px">
-            <Wrapper>
+            <WrapperContainer>
                 <Box>
                     <HeaderOne>
                         Movies Browser
                     </HeaderOne>
-                    <Navigation links={mainNavigation} />
+                    <Navigation />
                 </Box>
                 <Search
                     idName="search"
                     typeValue="text"
                     placeholderText="Search for movies..."
                 />
-            </Wrapper>
+            </WrapperContainer>
         </Container>
     </StyledHeader>
-);
+};
 
 export default Header;
