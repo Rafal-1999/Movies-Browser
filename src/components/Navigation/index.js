@@ -1,23 +1,11 @@
-import { StyledNavigation, NavigationLink } from "./styled";
+import StyledNavigation from "./styled";
 
-const Navigation = ({ links }) => {
-    const createNavigationLinks = (links) => {
-        return links.map(({ title, link }) => (
-            <li key={title}>
-                <NavigationLink
-                    $activeClassName="active"
-                    to={`/${link}`}
-                >
-                    {title}
-                </NavigationLink>
-            </li>
-        ));
-    };
-
+const Navigation = ({ props }) => {
     return (
         <nav>
             <StyledNavigation>
-                {createNavigationLinks(links)}
+                <a>Movies</a>
+                <a>People</a>
             </StyledNavigation>
         </nav>
     )

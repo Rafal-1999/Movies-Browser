@@ -22,19 +22,19 @@ export const NavigationLink = styled(NavLink)`
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.4s linear;
+    text-align: center;
 
-    &.${({ $activeClassName }) => $activeClassName} {
+    .${({ activeClassName }) => activeClassName} {
         border: 1px solid #FFFFFF;
     }
 
-    &:hover,
     &:focus {
         color: #000000;
         background: #FFFFFF;
     }
 
     @media ${device.sm} {
-        padding: 13.5px 24px;
-        font-size: 14px;
+        padding: 13.55px 24px;
+        font-size: 12px;
     }
 `;
