@@ -1,5 +1,8 @@
 import { HashRouter } from "react-router-dom";
 import Header from "./components/Header";
+import NoResults from "./components/NoResults";
+import Error from "./components/Error";
+import Loading from "./components/Loading";
 
 const App = () => {
     return (
@@ -7,6 +10,9 @@ const App = () => {
             <header>
                 <Header />
             </header>
+  	        <NoResults />
+    	      <Error />
+            <Loading />
         </HashRouter>
     )
 };
