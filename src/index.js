@@ -4,14 +4,13 @@ import reportWebVitals from './reportWebVitals';
 import { Normalize } from "styled-normalize";
 import { GlobalStyles } from "./styles/global";
 import App from './App';
-import { Fonts } from "./styles/fonts.css";
+import "./styles/fonts.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <Normalize />
         <GlobalStyles />
-        <Fonts />
         <App />
     </React.StrictMode>
 );
