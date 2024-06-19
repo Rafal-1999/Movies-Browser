@@ -19,8 +19,8 @@ const Search = ({
                 id={idName}
                 type={typeValue}
                 placeholder={placeholderText}
-                value={<span>Tekst</span>}
-                onChange={<></>}
+                value={``}
+                onChange={`Search`}
             />
         </InputBox>
     </StyledForm>

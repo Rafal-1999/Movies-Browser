@@ -5,18 +5,18 @@ import {
     StyledHeader,
     Wrapper,
     Box,
-    HeaderOne,
-    WrapperContainer
+    WrapperContainer,
+    MainHeader
 } from "./styled";
 
-const Header = () => {
+const Header = () => (
     <StyledHeader>
-        <Container maxWidth="1336px" padding="0 16px">
+        <Container>
             <WrapperContainer>
                 <Box>
-                    <HeaderOne>
+                    <MainHeader>
                         Movies Browser
-                    </HeaderOne>
+                    </MainHeader>
                     <Navigation />
                 </Box>
                 <Search
@@ -27,6 +27,6 @@ const Header = () => {
             </WrapperContainer>
         </Container>
     </StyledHeader>
-};
+);
 
 export default Header;

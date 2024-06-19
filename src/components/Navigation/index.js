@@ -1,11 +1,11 @@
-import StyledNavigation from "./styled";
+import { StyledNavigation, NavigationLink } from "./styled";
 
-const Navigation = ({ props }) => {
+const Navigation = () => {
     return (
         <nav>
             <StyledNavigation>
-                <a>Movies</a>
-                <a>People</a>
+                <NavigationLink to="/movies" activeClassName="active">Movies</NavigationLink>
+                <NavigationLink to="/people" activeClassName="active">People</NavigationLink>
             </StyledNavigation>
         </nav>
     )
