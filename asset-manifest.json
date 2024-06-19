@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Movies-Browser/static/css/main.aa9786f9.css",
+    "main.js": "/Movies-Browser/static/js/main.072471af.js",
+    "static/js/453.4f8818d1.chunk.js": "/Movies-Browser/static/js/453.4f8818d1.chunk.js",
+    "static/media/Poppins-Regular.svg": "/Movies-Browser/static/media/Poppins-Regular.f689c4fc4c7507be95e1.svg",
+    "static/media/Poppins-Medium.svg": "/Movies-Browser/static/media/Poppins-Medium.6bf4b625ff79a0bf3575.svg",
+    "static/media/Poppins-SemiBold.svg": "/Movies-Browser/static/media/Poppins-SemiBold.21314ef7cab083e96640.svg",
+    "static/media/Poppins-Regular.eot": "/Movies-Browser/static/media/Poppins-Regular.084bb7e2eb7a5af9d856.eot",
+    "static/media/Poppins-Regular.ttf": "/Movies-Browser/static/media/Poppins-Regular.54fc097304ae159b2c57.ttf",
+    "static/media/Poppins-Medium.eot": "/Movies-Browser/static/media/Poppins-Medium.8900822dbeb030c8a80d.eot",
+    "static/media/Poppins-Medium.ttf": "/Movies-Browser/static/media/Poppins-Medium.8fc7b84f0647425ff743.ttf",
+    "static/media/Poppins-SemiBold.eot": "/Movies-Browser/static/media/Poppins-SemiBold.2cd7a347b3e444c2662e.eot",
+    "static/media/Poppins-SemiBold.ttf": "/Movies-Browser/static/media/Poppins-SemiBold.bf268f0a7e4631729200.ttf",
+    "static/media/Poppins-Regular.woff": "/Movies-Browser/static/media/Poppins-Regular.04196e78ff1a51a39da7.woff",
+    "static/media/Poppins-SemiBold.woff": "/Movies-Browser/static/media/Poppins-SemiBold.64dfee096014a358b060.woff",
+    "static/media/Poppins-Medium.woff": "/Movies-Browser/static/media/Poppins-Medium.f8ea198d6244a3457ed2.woff",
+    "static/media/Poppins-Regular.woff2": "/Movies-Browser/static/media/Poppins-Regular.da98bcbc9fb47348882d.woff2",
+    "static/media/Poppins-SemiBold.woff2": "/Movies-Browser/static/media/Poppins-SemiBold.788fab5cbac156458b2e.woff2",
+    "static/media/Poppins-Medium.woff2": "/Movies-Browser/static/media/Poppins-Medium.59ef76edcfa6d3361cd0.woff2",
+    "static/media/noResults.svg": "/Movies-Browser/static/media/noResults.d286a671797f1244d0ba26eeaa04cf6f.svg",
+    "static/media/danger.svg": "/Movies-Browser/static/media/danger.a514e9c64a76d5cf149bdd7443857605.svg",
+    "index.html": "/Movies-Browser/index.html",
+    "static/media/loading.svg": "/Movies-Browser/static/media/loading.c5f29646f52eed97faa98a9f6f43ce08.svg",
+    "main.aa9786f9.css.map": "/Movies-Browser/static/css/main.aa9786f9.css.map",
+    "main.072471af.js.map": "/Movies-Browser/static/js/main.072471af.js.map",
+    "453.4f8818d1.chunk.js.map": "/Movies-Browser/static/js/453.4f8818d1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa9786f9.css",
+    "static/js/main.072471af.js"
+  ]
+}
