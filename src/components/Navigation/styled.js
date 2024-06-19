@@ -11,7 +11,7 @@ export const StyledNavigation = styled.ul`
     gap: 12px;
 `;
 
-export const NavigationLink = styled(NavLink)`
+export const NavigationLink = styled(NavLink).attrs({ activeClassName: 'active' })`
     color: #FFFFFF;
     padding: 8px 12px;
     display: block;
@@ -24,10 +24,6 @@ export const NavigationLink = styled(NavLink)`
     transition: all 0.4s linear;
     text-align: center;
 
-    .${({ activeClassName }) => activeClassName} {
-        border: 1px solid #FFFFFF;
-    }
-
     &:focus {
         color: #000000;
         background: #FFFFFF;
@@ -36,5 +32,9 @@ export const NavigationLink = styled(NavLink)`
     @media ${device.sm} {
         padding: 13.55px 24px;
         font-size: 12px;
+    }
+
+    &.${props => props.activeClassName} {
+        border: 1px solid #FFFFFF;
     }
 `;
