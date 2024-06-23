@@ -11,7 +11,7 @@ const App = () => {
                 <Header />
             </header>
   	        <NoResults />
-    	      <Error />
+    	    <Error />
             <Loading />
         </HashRouter>
     )

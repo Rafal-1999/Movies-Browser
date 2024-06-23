@@ -26,7 +26,7 @@ export const InfoHeader = styled.p`
   font-size: 22px;
   font-weight: 500;
   line-height: 28.6px;
-  margin: 12px;
+  margin: 0 auto;
   padding-bottom: 35px;
 `;
 
@@ -35,9 +35,11 @@ export const ErrorLink = styled.a`
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  margin: 0 auto;
   padding: 16px 24px;
   border-radius: 5px;
   text-align: center;
+  text-decoration: none;
   line-height: 19px;
   cursor: pointer;
   display: inline-block;

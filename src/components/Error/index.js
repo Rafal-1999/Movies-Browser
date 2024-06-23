@@ -5,7 +5,7 @@ const Error = () => (
         <ErrorImage />
         <MainHeader>Opps! Something went wrong...</MainHeader>
         <InfoHeader>Please check your network connection <br /> and try again</InfoHeader>
-        <ErrorLink>Back to home page</ErrorLink>
+        <ErrorLink href="https://rafal-1999.github.io/Movies-Browser/">Back to home page</ErrorLink>
     </Container>
 );
 

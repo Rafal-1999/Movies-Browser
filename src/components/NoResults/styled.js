@@ -3,7 +3,10 @@ import { ReactComponent as NoResultsImage } from '../../assets/images/noResults.
 import { device } from '../../styles/breakpoints';
 
 export const Container = styled.div`
-    padding: 16px;
+    width: 100%;
+    max-width: 1334px;
+    margin: 0px auto;
+    padding: 0px 12px;
 
     @media ${device.sm} {
         padding: 12px;
