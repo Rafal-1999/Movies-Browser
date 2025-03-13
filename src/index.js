@@ -1,12 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
+import { Provider } from "react-redux";
+import { Normalize } from "styled-normalize";
+import { HashRouter } from "react-router-dom";
+import App from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-        <App />
+        <Provider>
+            <Normalize />
+            <HashRouter>
+                <App />
+            </HashRouter>
+        </Provider>
     </React.StrictMode>
 );
 
