@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import { Normalize } from "styled-normalize";
 import { HashRouter } from "react-router-dom";
 import App from "./App";
+import { GlobalStyles } from "./styles/global";
 import "./assets/css/poppins.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -12,6 +13,7 @@ root.render(
     <React.StrictMode>
         <Provider>
             <Normalize />
+            <GlobalStyles />
             <HashRouter>
                 <App />
             </HashRouter>
