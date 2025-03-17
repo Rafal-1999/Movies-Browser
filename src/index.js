@@ -4,13 +4,17 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { Normalize } from "styled-normalize";
 import { HashRouter } from "react-router-dom";
+import store from "./store";
 import App from "./App";
+import { GlobalStyles } from "./styles/global";
+import "./assets/css/poppins.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-        <Provider>
+        <Provider store={store}>
             <Normalize />
+            <GlobalStyles />
             <HashRouter>
                 <App />
             </HashRouter>
