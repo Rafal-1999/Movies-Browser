@@ -7,6 +7,7 @@ import { HashRouter } from "react-router-dom";
 import App from "./App";
 import { GlobalStyles } from "./styles/global";
 import "./assets/css/poppins.css";
+import "./assets/css/icomoon.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
