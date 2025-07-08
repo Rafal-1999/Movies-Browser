@@ -29,7 +29,7 @@ const App = () => {
         <>
             <header>
                 <BoxBackground $background="#18181B">
-                    <Container maxWidth="1336px" padding="0 16px">
+                    <Container maxWidth="1368px" padding="0 16px">
                         <Wrapper>
                             <Box>
                                 <MainHeader>
@@ -57,7 +57,7 @@ const App = () => {
                 </BoxBackground>
             </header>
             <main>
-                <Container maxWidth="1368px" padding="0 16px">
+                <Container maxWidth="1400px" padding="0 16px">
                     <Routes>
                         {pagesRoutes}
                         <Route path="/" element={<Navigate to="/movies" />} />
