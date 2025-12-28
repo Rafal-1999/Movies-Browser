@@ -17,6 +17,9 @@ import {
 } from "./styles/layout";
 import { mainNavigation } from "./data/mainNavigation";
 import routes from "./routes";
+import { fetchMoviesRequest } from "./features/movies/moviesSlice";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
 
 const App = () => {
     const location = useLocation();
@@ -24,6 +27,15 @@ const App = () => {
     const pagesRoutes = routes.map(({ title, path, element }) => {
         return <Route key={title} path={path} element={element} />;
     });
+
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+
+        dispatch(fetchMoviesRequest({ url: "https://api.themoviedb.org/3/movie/popular?api_key=c6fee36799c48aee18ba4964841fa55c&page=1&sort_by=original_title.asc", type: "1" }));
+
+    }, [dispatch]);
 
     return (
         <>

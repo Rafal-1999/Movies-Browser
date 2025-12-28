@@ -1,25 +1,35 @@
 import {
-    SearchForm,
-    SearchIcon,
-    FormInput
-} from "./styled";
+    useQueryParameter,
+    useReplaceQueryParameter
+} from "../../features/movies/queryParameters";
+import { SearchForm, SearchFormInput } from "./styled";
 import { VisuallyHidden } from "../../styles/global";
 
 const Search = ({ labelText, placeholderText }) => {
+    const query = useQueryParameter("search");
+    const replaceQueryParameter = useReplaceQueryParameter();
+
+    const onInputChange = ({ target }) => {
+        replaceQueryParameter({
+            key: "search",
+            inputValue: target.value.trim() ? target.value : ""
+        });
+    };
+
     return (
-        <SearchForm>
+        <SearchForm role="search">
             <VisuallyHidden as="label" htmlFor="search">
                 {labelText}
             </VisuallyHidden>
-            <SearchIcon className="icon-search" />
-            <FormInput
+            <SearchFormInput
                 id="search"
                 type="search"
                 placeholder={placeholderText}
-                value={""}
-                onChange={() => "Funkcja"}
+                minLength="3"
+                value={query || ""}
+                onChange={onInputChange}
             />
-            <VisuallyHidden as="button" type="submit">Wyszukaj</VisuallyHidden>
+            <VisuallyHidden as="button" type="submit" tabIndex="-1" aria-hidden="true">Search</VisuallyHidden>
         </SearchForm>
     )
 };

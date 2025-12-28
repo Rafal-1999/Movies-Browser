@@ -10,9 +10,17 @@ function* fetchDataSaga(action) {
     try {
         const data = yield call(fetchDataFromApi, action.payload.url);
 
-        yield put(fetchMoviesSuccess(data));
+        if (action.payload.type === "movies") {
+            yield put(fetchMoviesSuccess({
+                page: data.page,
+                results: data.results
+            }));
+        }
+
     } catch (error) {
-        yield put(fetchMoviesError());
+        if (action.payload.type === "movies") {
+            yield put(fetchMoviesError());
+        }
     }
 };
 

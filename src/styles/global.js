@@ -16,18 +16,23 @@ export const GlobalStyles = createGlobalStyle`
     body {
         background: #F5F5FA;
         font-family: "Poppins", sans-serif;
+        background: #222222;
+    }
+
+    :focus {
+        outline: 10px dashed lightgreen;
     }
 `;
 
 export const StretchedLink = styled(Link)`
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    white-space: nowrap;
+    text-indent: 600px;
+    overflow: hidden;
 `;
 
 export const VisuallyHidden = styled.span`
@@ -36,6 +41,7 @@ export const VisuallyHidden = styled.span`
     margin: -1px;
     padding: 0;
     border: 0;
+    display: inline-block;
     position: absolute;
     overflow: hidden;
     white-space: nowrap;

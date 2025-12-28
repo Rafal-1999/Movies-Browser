@@ -3,6 +3,7 @@ import { device } from "../../styles/breakpoints";
 
 export const SearchForm = styled.form`
     width: 100%;
+    position: relative;
 
     @media ${device.md} {
         width: auto;
@@ -11,18 +12,26 @@ export const SearchForm = styled.form`
     }
 `;
 
-export const SearchIcon = styled.span`
-    color: #627489;
-    margin: auto 0;
-    font-size: 13px;
-    font-weight: 700;
+export const SearchFormButton = styled.button`
+    width: 44px;
+    height: 100%;
+    /* border: 0; */
+    border-radius: 33px;
     position: absolute;
     top: 0;
-    left: 18px;
-    bottom: 0;
+    left: 2px;
+    z-index: 1;
+
+    @media ${device.xs} {
+        left: 2px;
+    }
+
+    @media ${device.sm} {
+        left: 10px;
+    }
 `;
 
-export const FormInput = styled.input`
+export const SearchFormInput = styled.input`
     width: 100%;
     height: 44px;
     padding: 14px 12px;
